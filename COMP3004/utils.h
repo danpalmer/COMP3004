@@ -1,0 +1,2 @@
+
+char* fileToBuffer(char* file);

@@ -7,27 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37B59B741628150F009C873E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 37B59B731628150F009C873E /* main.c */; };
-		37B59B761628150F009C873E /* COMP3004.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37B59B751628150F009C873E /* COMP3004.1 */; };
+		37B59B741628150F009C873E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37B59B731628150F009C873E /* main.cpp */; };
+		37B59B7E16284667009C873E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B59B7D16284667009C873E /* OpenGL.framework */; };
+		37B59B8516285706009C873E /* FragmentShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37B59B7F1628541C009C873E /* FragmentShader.glsl */; };
+		37B59B8616285706009C873E /* VertexShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37B59B8016285429009C873E /* VertexShader.glsl */; };
+		37FC0E69162ECC1A0028DDA7 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37FC0E68162ECC1A0028DDA7 /* utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37B59B6D1628150F009C873E /* CopyFiles */ = {
+		37B59B84162856F6009C873E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
-				37B59B761628150F009C873E /* COMP3004.1 in CopyFiles */,
+				37B59B8516285706009C873E /* FragmentShader.glsl in CopyFiles */,
+				37B59B8616285706009C873E /* VertexShader.glsl in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37B59B6F1628150F009C873E /* COMP3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = COMP3004; sourceTree = BUILT_PRODUCTS_DIR; };
-		37B59B731628150F009C873E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		37B59B751628150F009C873E /* COMP3004.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COMP3004.1; sourceTree = "<group>"; };
+		37B59B731628150F009C873E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		37B59B7D16284667009C873E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		37B59B7F1628541C009C873E /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		37B59B8016285429009C873E /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		37FC0E67162ECC060028DDA7 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		37FC0E68162ECC1A0028DDA7 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		37FC0E6A162ECC8D0028DDA7 /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B59B7E16284667009C873E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +56,7 @@
 			children = (
 				37B59B721628150F009C873E /* COMP3004 */,
 				37B59B701628150F009C873E /* Products */,
+				37B59B7D16284667009C873E /* OpenGL.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,12 @@
 		37B59B721628150F009C873E /* COMP3004 */ = {
 			isa = PBXGroup;
 			children = (
-				37B59B731628150F009C873E /* main.c */,
-				37B59B751628150F009C873E /* COMP3004.1 */,
+				37B59B731628150F009C873E /* main.cpp */,
+				37B59B8016285429009C873E /* VertexShader.glsl */,
+				37B59B7F1628541C009C873E /* FragmentShader.glsl */,
+				37FC0E67162ECC060028DDA7 /* utils.h */,
+				37FC0E68162ECC1A0028DDA7 /* utils.cpp */,
+				37FC0E6A162ECC8D0028DDA7 /* data.h */,
 			);
 			path = COMP3004;
 			sourceTree = "<group>";
@@ -75,7 +90,7 @@
 			buildPhases = (
 				37B59B6B1628150F009C873E /* Sources */,
 				37B59B6C1628150F009C873E /* Frameworks */,
-				37B59B6D1628150F009C873E /* CopyFiles */,
+				37B59B84162856F6009C873E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -117,7 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B59B741628150F009C873E /* main.c in Sources */,
+				37B59B741628150F009C873E /* main.cpp in Sources */,
+				37FC0E69162ECC1A0028DDA7 /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +163,14 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -170,7 +192,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -208,6 +236,7 @@
 				37B59B7B1628150F009C873E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
